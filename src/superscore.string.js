@@ -21,27 +21,31 @@
 	}
 	
 
-	s.truncate = function(str, max, trail, atChar){
-		if(trail == null && arguments.length == 1)
-			trail = '…';
+	function truncate(str, max, options){
+		if(!options)
+			options = {};
+		
+		if(!options.trail)
+			options.trail = '…';
 		
 		if(str.length > max){
 			str = str.substring(0, max);
 			
-			if(atChar){
-				var index = str.lastIndexOf(atChar);
+			if(options.atChar){
+				var index = str.lastIndexOf(options.atChar);
+				
 				if(index != -1)
 					str = str.substr(0, index);
 			}
 			
-			if(trail)
-				str += trail;
+			if(options.trail)
+				str += options.trail;
 		}
 		
 		return str;
 	};
 	
-	s.random = function(length){
+	function random(length){
 	    var text = '',
 			possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ-_abcdefghijklmnopqrstuvwxyz0123456789',
 			l = length || 8;
@@ -51,4 +55,8 @@
 	
 	    return text;
 	};
+	
+	s.truncate = truncate;
+	s.random = random;
+	
 })(Function('return this')());
