@@ -1,6 +1,6 @@
 {
 	"name": "superscore.string",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"homepage": "https://github.com/dreadcast/superscore.string",
 	"description": "Useful mixins for Underscore.String",
 	"author": "Raphael Gully",
