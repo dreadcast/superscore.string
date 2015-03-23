@@ -1,0 +1,27 @@
+{
+	"name": "superscore.string",
+	"version": "0.0.0",
+	"homepage": "https://github.com/dreadcast/superscore.string",
+	"description": "Useful mixins for Underscore.String",
+	"author": "Raphael Gully",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:dreadcast/superscore.string.git"
+	},
+	"license": "WTFPL",
+	"keywords": [
+		"underscore.string",
+		"underscore",
+		"string",
+		"native",
+		"manipulation"
+	],
+	"ignore": [
+		".jshintrc",
+		"**/*.txt"
+	],
+	"dependencies": {
+		"lodash": "3.5.0"
+	},
+	"main": "dist/superscore.string.js"
+}
