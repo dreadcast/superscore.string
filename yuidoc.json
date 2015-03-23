@@ -1,7 +1,7 @@
 {
 	"name": "Superscore.String API",
 	"description": "Superscore.String is a set of mixins for Underscore.String.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"url": "https://github.com/dreadcast/superscore.string",
 	"options": {
 		"paths": [
